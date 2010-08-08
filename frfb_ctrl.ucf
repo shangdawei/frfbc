@@ -1,0 +1,139 @@
+##
+## -----------------------------------------------------------------------------##
+## frfb_ctrl.ucf
+##
+## Copyright (C) 2010 WeiYue
+##
+## -----------------------------------------------------------------------------##
+##  This file is part of FRFBC (FPGA Remote Framebuffer Controller)
+##  FRFBC is free software - hardware description language (HDL) code.
+## 
+##  This program is free software: you can redistribute it and/or modify
+##  it under the terms of the GNU General Public License as published by
+##  the Free Software Foundation, either version 3 of the License, or
+##  (at your option) any later version.
+##
+##  This program is distributed in the hope that it will be useful,
+##  but WITHOUT ANY WARRANTY; without even the implied warranty of
+##  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+##  GNU General Public License for more details.
+##
+##  You should have received a copy of the GNU General Public License
+##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+## -----------------------------------------------------------------------------##
+##
+
+net "CLK_IN"          iostandard="LVCMOS33" |loc = "P58" ;
+net "RST_N"           iostandard="LVCMOS33" |loc = "P53" ;
+net "LVDS_CLKA_P"     iostandard="LVDS_33"  |loc = "P57" ;		#
+net "LVDS_CLKA_N"     iostandard="LVDS_33"  |loc = "P59" ;		#
+net "LVDS_DATA_P(3)"  iostandard="LVDS_33"  |loc = "P54" ;	#
+net "LVDS_DATA_N(3)"  iostandard="LVDS_33"  |loc = "P55" ;	#
+net "LVDS_DATA_P(2)"  iostandard="LVDS_33"  |loc = "P63" ;	#
+net "LVDS_DATA_N(2)"  iostandard="LVDS_33"  |loc = "P64" ;	#
+net "LVDS_DATA_P(1)"  iostandard="LVDS_33"  |loc = "P67" ;	#
+net "LVDS_DATA_N(1)"  iostandard="LVDS_33"  |loc = "P68" ;	#
+net "LVDS_DATA_P(0)"  iostandard="LVDS_33"  |loc = "P69" ;	#
+net "LVDS_DATA_N(0)"  iostandard="LVDS_33"  |loc = "P71" ;	#
+net "LVDS_CLKB_P"     iostandard="LVDS_33"  |loc = "P43" ;		#
+net "LVDS_CLKB_N"     iostandard="LVDS_33"  |loc = "P45" ;		#
+net "LVDS_DATB_P(3)"  iostandard="LVDS_33"  |loc = "P42" ;	#
+net "LVDS_DATB_N(3)"  iostandard="LVDS_33"  |loc = "P44" ;	#
+net "LVDS_DATB_P(2)"  iostandard="LVDS_33"  |loc = "P46" ;	#
+net "LVDS_DATB_N(2)"  iostandard="LVDS_33"  |loc = "P48" ;	#
+net "LVDS_DATB_P(1)"  iostandard="LVDS_33"  |loc = "P47" ;	#
+net "LVDS_DATB_N(1)"  iostandard="LVDS_33"  |loc = "P49" ;	#
+net "LVDS_DATB_P(0)"  iostandard="LVDS_33"  |loc = "P50" ;	#
+net "LVDS_DATB_N(0)"  iostandard="LVDS_33"  |loc = "P51" ;	#
+net "CLK_P"				 iostandard="LVCMOS33" |loc = "P60" ;
+net "DE_LCD_IN"		 iostandard="LVCMOS33" |loc = "P72" ;
+net "VSYNC"				 iostandard="LVCMOS33" |loc = "P70" ;
+net "DATA_LCD_IN(0)"  iostandard="LVCMOS33" |loc = "P92" ;
+net "DATA_LCD_IN(1)"  iostandard="LVCMOS33" |loc = "P104" ;
+net "DATA_LCD_IN(2)"  iostandard="LVCMOS33" |loc = "P90" ;
+net "DATA_LCD_IN(3)"  iostandard="LVCMOS33" |loc = "P91" ;
+net "DATA_LCD_IN(4)"  iostandard="LVCMOS33" |loc = "P88" ;
+net "DATA_LCD_IN(5)"  iostandard="LVCMOS33" |loc = "P87" ;
+net "DATA_LCD_IN(6)"  iostandard="LVCMOS33" |loc = "P76" ;
+net "DATA_LCD_IN(7)"  iostandard="LVCMOS33" |loc = "P78" ;
+net "DATA_LCD_IN(8)"  iostandard="LVCMOS33" |loc = "P77" ;
+net "DATA_LCD_IN(9)"  iostandard="LVCMOS33" |loc = "P79" ;
+net "DATA_LCD_IN(10)" iostandard="LVCMOS33" |loc = "P85" ;
+net "DATA_LCD_IN(11)" iostandard="LVCMOS33" |loc = "P96" ;
+net "DATA_LCD_IN(12)" iostandard="LVCMOS33" |loc = "P105" ;
+net "DATA_LCD_IN(13)" iostandard="LVCMOS33" |loc = "P102" ;
+net "DATA_LCD_IN(14)" iostandard="LVCMOS33" |loc = "P99" ;
+net "DATA_LCD_IN(15)" iostandard="LVCMOS33" |loc = "P93" ;
+net "DATA_LCD_IN(16)" iostandard="LVCMOS33" |loc = "P83" ;
+net "DATA_LCD_IN(17)" iostandard="LVCMOS33" |loc = "P82" ;
+net "DATA_LCD_IN(18)" iostandard="LVCMOS33" |loc = "P84" ;
+net "DATA_LCD_IN(19)" iostandard="LVCMOS33" |loc = "P101" ;
+net "DATA_LCD_IN(20)" iostandard="LVCMOS33" |loc = "P80" ;
+net "DATA_LCD_IN(21)" iostandard="LVCMOS33" |loc = "P103" ;
+net "DATA_LCD_IN(22)" iostandard="LVCMOS33" |loc = "P98" ;
+net "DATA_LCD_IN(23)" iostandard="LVCMOS33" |loc = "P97" ;
+net "DDR_CK_P" 		 iostandard="DIFF_SSTL2_I" |loc = "P18" ;
+net "DDR_CK_N"        iostandard="DIFF_SSTL2_I" |loc = "P20" ;
+net "DDR_CKE"         iostandard="SSTL2_I"  |loc = "P21" ;
+net "DDR_WE_N"        iostandard="SSTL2_I"  |loc = "P125" ;
+net "DDR_RAS_N"       iostandard="SSTL2_I"  |loc = "P127" ;
+net "DDR_CAS_N"       iostandard="SSTL2_I"  |loc = "P126" ;
+net "DDR_CS_N"        iostandard="SSTL2_I"  |loc = "P129" ;
+net "DDR_DQS(0)"      iostandard="SSTL2_I"  |loc = "P121" ;
+net "DDR_DQS(1)"      iostandard="SSTL2_I"  |loc = "P13" ;
+net "DDR_DM(0)"       iostandard="SSTL2_I"  |loc = "P124" ;
+net "DDR_DM(1)"       iostandard="SSTL2_I"  |loc = "P15" ;
+net "DDR_BA(0)"       iostandard="SSTL2_I"  |loc = "P130" ;
+net "DDR_BA(1)"       iostandard="SSTL2_I"  |loc = "P131" ;
+net "DDR_ADDR(0)"     iostandard="SSTL2_I"  |loc = "P134" ;
+net "DDR_ADDR(1)"     iostandard="SSTL2_I"  |loc = "P135" ;
+net "DDR_ADDR(2)"     iostandard="SSTL2_I"  |loc = "P138" ;
+net "DDR_ADDR(3)"     iostandard="SSTL2_I"  |loc = "P139" ;
+net "DDR_ADDR(4)"     iostandard="SSTL2_I"  |loc = "P32" ;
+net "DDR_ADDR(5)"     iostandard="SSTL2_I"  |loc = "P31" ;
+net "DDR_ADDR(6)"     iostandard="SSTL2_I"  |loc = "P30" ;
+net "DDR_ADDR(7)"     iostandard="SSTL2_I"  |loc = "P29" ;
+net "DDR_ADDR(8)"     iostandard="SSTL2_I"  |loc = "P28" ;
+net "DDR_ADDR(9)"     iostandard="SSTL2_I"  |loc = "P27" ;
+net "DDR_ADDR(10)"    iostandard="SSTL2_I"  |loc = "P132" ;
+net "DDR_ADDR(11)"    iostandard="SSTL2_I"  |loc = "P25" ;
+net "DDR_ADDR(12)"    iostandard="SSTL2_I"  |loc = "P24" ;
+net "DDR_DQ(0)"       iostandard="SSTL2_I"  |loc = "P110" ;
+net "DDR_DQ(1)"       iostandard="SSTL2_I"  |loc = "P111" ;
+net "DDR_DQ(2)"       iostandard="SSTL2_I"  |loc = "P113" ;
+net "DDR_DQ(3)"       iostandard="SSTL2_I"  |loc = "P114" ;
+net "DDR_DQ(4)"       iostandard="SSTL2_I"  |loc = "P115" ;
+net "DDR_DQ(5)"       iostandard="SSTL2_I"  |loc = "P116" ;
+net "DDR_DQ(6)"       iostandard="SSTL2_I"  |loc = "P117" ;
+net "DDR_DQ(7)"       iostandard="SSTL2_I"  |loc = "P120" ;
+net "DDR_DQ(8)"       iostandard="SSTL2_I"  |loc = "P12" ;
+net "DDR_DQ(9)"       iostandard="SSTL2_I"  |loc = "P10" ;
+net "DDR_DQ(10)"      iostandard="SSTL2_I"  |loc = "P8" ;
+net "DDR_DQ(11)"      iostandard="SSTL2_I"  |loc = "P7" ;
+net "DDR_DQ(12)"      iostandard="SSTL2_I"  |loc = "P6" ;
+net "DDR_DQ(13)"      iostandard="SSTL2_I"  |loc = "P5" ;
+net "DDR_DQ(14)"      iostandard="SSTL2_I"  |loc = "P4" ;
+net "DDR_DQ(15)"      iostandard="SSTL2_I"  |loc = "P3" ;
+
+net clk_54 tnm = clk ;
+net clk_lvds_3p5 tnm = clkx3p5 ;
+net clk_108 tnm = clksys;
+net clk_dqs tnm = clkdqs;
+
+timespec tssys00 = period clksys 108 MHz ;
+timespec tssys01 = period clkdqs 216 MHz;
+
+timespec tstx00 = period clkx3p5 189 MHz ;
+timespec tstx02 = from clk to clkx3p5 = tstx00*2 ;
+timespec tstx03 = from clkx3p5 to ffs(lvds_tx_inst/tx0/*clkd2) = tstx00*2 ;
+timespec tstx04 = from clkx3p5 to ffs(lvds_tx_inst/tx1/*clkd2) = tstx00*2 ;
+inst "lvds_tx_inst/tx0/*fd_db*" tnm = FFS dbgroup1;
+inst "lvds_tx_inst/tx1/*fd_db*" tnm = FFS dbgroup2;
+
+timespec tstx05 = from clk to dbgroup1 = tstx00/1.5 ;
+timespec tstx06 = from clk to dbgroup2 = tstx00/1.5 ;
+timespec tstx07 = from clk to clk = tstx00/3.5 ;
+
+NET "CLK_IN" CLOCK_DEDICATED_ROUTE = FALSE;
+timespec tsdqs00 = from ffs (ddr_ctrl_inst/u1_ddr_data/fd_dqs_0) to "DDR_DQS<0>" 0.5 ns;
+timespec tsdqs01 = from ffs (ddr_ctrl_inst/u1_ddr_data/fd_dqs_1) to "DDR_DQS<1>" 0.5 ns;
